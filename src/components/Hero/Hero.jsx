@@ -1,24 +1,23 @@
-import HeroCarousel from "react-hero-carousel";
+import React from 'react';
+import ImageGallery from 'react-image-gallery';
+import './Hero.css';
 
 const Hero = () => {
+  const images = [
+    {
+      original: 'https://picsum.photos/id/1018/1000/600/',
+    },
+    {
+      original: 'https://picsum.photos/id/1015/1000/600/',
+    },
+    {
+      original: 'https://picsum.photos/id/1019/1000/600/',
+    },
+  ];
   return (
-    <HeroCarousel>
-      <img
-        src="https://placem.at/places?w=1920&h=1080&seed=1&txt=1"
-        width="100%"
-        height="100%"
-      />
-      <img
-        src="https://placem.at/places?w=1920&h=1080&seed=2&txt=2"
-        width="100%"
-        height="100%"
-      />
-      <img
-        src="https://placem.at/places?w=1920&h=1080&seed=2&txt=2"
-        width="100%"
-        height="100%"
-      />
-    </HeroCarousel>
+    <div>
+      <ImageGallery items={images} />
+    </div>
   );
 };
 

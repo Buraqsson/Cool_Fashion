@@ -1,28 +1,13 @@
-import React from 'react'
-import ImageGallery from 'react-image-gallery';
-import "./Main.css"
+import React from 'react';
+import Hero from '../Hero/Hero';
+
+import './Main.css';
 const Main = () => {
-  const images = [
-    {
-      original: 'https://picsum.photos/id/1018/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1018/250/150/',
-    },
-    {
-      original: 'https://picsum.photos/id/1015/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1015/250/150/',
-    },
-    {
-      original: 'https://picsum.photos/id/1019/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1019/250/150/',
-    },
-  ];
   return (
     <div>
-
-       <ImageGallery items={images} />
-
+      <Hero />
     </div>
-  )
-}
+  );
+};
 
-export default Main
+export default Main;
