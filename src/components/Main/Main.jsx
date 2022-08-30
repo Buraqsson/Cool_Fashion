@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import Hero from "../Hero/Hero";
 
 const Main = () => {
   return (
-    <div>Main</div>
-  )
-}
+    <div>
+      Main
+      <Hero />
+    </div>
+  );
+};
 
-export default Main
+export default Main;
