@@ -1,0 +1,6 @@
+@import 'react-image-gallery/styles/css/image-gallery.css';
+
+.image-gallery-fullscreen-button,
+.image-gallery-play-button {
+  display: none;
+}
