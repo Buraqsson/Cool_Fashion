@@ -1,8 +1,86 @@
 import React from 'react'
+import {
+    Box,
+    Container,
+    Row,
+    Column,
+    FooterLink,
+    Heading,
+  } from "./FooterStyles";
+import "./Footer.css"
+  import gmail from "./social/gmail.svg"
+  import facebook from "./social/facebook.svg"
+  import instagram from "./social/instagram.svg"
+  import linkedin from "./social/linkedin.svg"
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <Box>
+
+<h1 style={{ color: "white", 
+                   textAlign: "center", 
+                   marginTop: "-50px" }}>
+Get 20% off and srsly good news
+      </h1>
+      <Container>
+        <Row>
+          <Column>
+            <Heading>Help</Heading>
+            <FooterLink href="#">FAQ</FooterLink>
+            <FooterLink href="#">Cookie</FooterLink>
+            <FooterLink href="#">Return & Refund</FooterLink>
+          </Column>
+          <Column>
+            <Heading>Contact</Heading>
+            <FooterLink href="#">Contact us</FooterLink>
+            <FooterLink href="#">press</FooterLink>
+            <FooterLink href="#">Coding</FooterLink>
+            <FooterLink href="#">Working at Cool Fashion</FooterLink>
+          </Column>
+          <Column>
+            <Heading>We are Cool Fashion</Heading>
+            <FooterLink href="#">About us</FooterLink>
+            <FooterLink href="#">Transparency</FooterLink>
+          </Column>
+        </Row>
+      </Container>
+    <div className='footer'> 
+        <div className='social-media'>
+          <a
+            classsName="socia-icon"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="mailto:coolfashion@gmail.com"
+            >
+            <img src={gmail} alt="" />
+          </a>
+          <a
+          classsName="socia-icon"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.linkedin.com"
+        >
+          <img src={linkedin} alt="" />
+        </a>
+        <a
+          classsName="socia-icon"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://facebook.com/"
+        >
+          <img src={facebook} alt="" />
+        </a>
+        <a
+          classsName="socia-icon"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.instagram.com/"
+        >
+          <img src={instagram} alt="" />
+        </a>
+        </div>
+    </div>
+    </Box>
   )
 }
 
