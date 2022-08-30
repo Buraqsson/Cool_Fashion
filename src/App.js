@@ -1,13 +1,15 @@
-import logo from "./logo.svg";
 import "./styles.css";
+
+import Header from "./components/Header/Header";
+import Main from "./components/Main/Main";
 import Footer from "./components/Footer/Footer";
-import Main from "./components/Main/Main.jsx";
+
 function App() {
   return (
     <div className="App">
-  {/* <Header/> */}
-      <Main/> 
-      <Footer/>
+      <Header />
+      <Main />
+      <Footer />
     </div>
   );
 }
