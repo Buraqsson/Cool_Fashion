@@ -5,6 +5,11 @@
   height: 25rem;
 }
 
+.image-gallery-slide .image-gallery-image {
+  object-fit: cover;
+  height: 25rem;
+}
+
 .image-gallery-fullscreen-button,
 .image-gallery-play-button {
   display: none;
