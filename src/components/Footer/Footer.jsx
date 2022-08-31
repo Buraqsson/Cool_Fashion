@@ -20,7 +20,7 @@ const Footer = () => {
 <h1 style={{ color: "white", 
                    textAlign: "center", 
                    marginTop: "-50px" }}>
-Get 20% off and srsly good news
+    Make a statement of yourself!
       </h1>
       <Container>
         <Row>
