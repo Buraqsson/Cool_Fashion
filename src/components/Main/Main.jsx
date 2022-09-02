@@ -2,6 +2,11 @@ import React from "react";
 import Hero from "../Hero/Hero";
 import ProductMenu from "../ProduktSida/ProductMenu";
 import "./Main.css";
+<<<<<<< HEAD
+=======
+import SocialMediaMenu from "../SocialMediaCard/SocialMediaMenu";
+
+>>>>>>> efea3ea72fa41a6a698f63d04e940a9181d537cd
 const Main = () => {
   let dataBase = [
     {
@@ -57,11 +62,24 @@ const Main = () => {
     },
   ];
 
+  let socialMediaDataBase = [
+    {
+      title: "https://via.placeholder.com/240x350",
+    },
+    {
+      title: "https://via.placeholder.com/240x350",
+    },
+  ];
+
   return (
     <div>
       <Hero />
       <div>
         <ProductMenu dataBase={dataBase} />
+<<<<<<< HEAD
+=======
+        <SocialMediaMenu />
+>>>>>>> efea3ea72fa41a6a698f63d04e940a9181d537cd
       </div>
     </div>
   );
