@@ -17,7 +17,7 @@ const Footer = () => {
   return (
     <Box>
 
-<h1 style={{ color: "white", 
+<h1 className="footerHeader" style={{ color: "white", 
                    textAlign: "center", 
                    marginTop: "-50px" }}>
     Make a statement of yourself!

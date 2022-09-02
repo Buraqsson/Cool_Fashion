@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.socialParent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1rem;
+    margin: 3rem 1rem;
+    }
+    
+    .div1 { 
+        grid-area: 1 / 1 / 4 / 2; 
+    }
+
+    .div2 { 
+        grid-area: 1 / 2 / 4 / 3;}
+
+    .div3 { 
+        grid-area: 1 / 3 / 2 / 4; 
+    }
+
+    .div4 { 
+        grid-area: 2 / 3 / 3 / 4; 
+        background-color: #f28482;
+    }
+    .div4 p {
+        font-size: x-large;
+        text-align: center; 
+        padding: 2.5em 0;
+        margin: 0;
+        color: #f7ede2;
+        
+    }
+
+    .div5 { 
+        grid-area: 3 / 3 / 4 / 4; 
+        background-color: #f7ede2;
+    }
+
+    .div5 p {
+        font-size: x-large;
+        text-align: center; 
+        padding: 2.5em 0;
+        margin: 0;
+        color: #f6bd60;
+    }
+
+    .imgSocialMedia {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .socialText {
+        font-family: 'Bebas Neue', cursive;
+    }
+
+   
