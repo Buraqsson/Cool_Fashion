@@ -1,8 +1,11 @@
 import React from 'react'
+import Admin from '../components/Admin/Admin'
 
 const AdminPage = () => {
   return (
-    <div>AdminPage</div>
+    <div>
+      <Admin />
+     </div>
   )
 }
 

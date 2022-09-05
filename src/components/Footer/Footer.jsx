@@ -12,7 +12,7 @@ import "./Footer.css"
   import facebook from "./social/facebook.svg"
   import instagram from "./social/instagram.svg"
   import linkedin from "./social/linkedin.svg"
-
+import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <Box>
@@ -39,11 +39,19 @@ const Footer = () => {
           </Column>
           <Column>
             <Heading>We are Cool Fashion</Heading>
-            <FooterLink href="#">About us</FooterLink>
+            
+            <FooterLink href='#'>About us</FooterLink>
+           
             <FooterLink href="#">Transparency</FooterLink>
+            <Link to="/admin">
+            <FooterLink href="#">Admin</FooterLink>
+            </Link>
           </Column>
         </Row>
       </Container>
+
+    
+
     <div className='footer'> 
         <div className='social-media'>
           <a
