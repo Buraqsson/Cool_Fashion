@@ -6,9 +6,6 @@ import { useState } from "react";
 //npm install react-icons
 
 const Header = () => {
-
-
-  array 
   return (
     <div>
       <div className="header">
