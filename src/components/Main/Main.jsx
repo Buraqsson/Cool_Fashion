@@ -1,37 +1,38 @@
-import React from "react";
-import Hero from "../Hero/Hero";
-import ProductMenu from "../ProduktSida/ProductMenu";
-import "./Main.css";
-import SocialMediaMenu from "../SocialMediaCard/SocialMediaMenu";
+import React from 'react';
+import Hero from '../Hero/Hero';
+import ProductMenu from '../ProduktSida/ProductMenu';
+import './Main.css';
+import SocialMediaMenu from '../SocialMediaCard/SocialMediaMenu';
 
 const Main = () => {
   let dataBase = [
     {
-      title: "https://via.placeholder.com/240x350?text=ProductCard",
+      title: 'https://via.placeholder.com/240x350?text=ProductCard',
 
-      text: "New in",
+      text: 'New in',
     },
     {
-      title: "https://via.placeholder.com/240x350?text=ProductCard",
+      title: 'https://via.placeholder.com/240x350?text=ProductCard',
 
-      text: "Best Sellers",
+      text: 'Best Sellers',
     },
     {
-      title: "https://via.placeholder.com/240x350?text=ProductCard",
+      title: 'https://via.placeholder.com/240x350?text=ProductCard',
 
-      text: "Tops",
+      text: 'Tops',
     },
     {
-      title: "https://via.placeholder.com/240x350?text=ProductCard",
+      title: 'https://via.placeholder.com/240x350?text=ProductCard',
 
-      text: "T-shirts",
+      text: 'T-shirts',
     },
 
     {
-      title: "https://via.placeholder.com/240x350?text=ProductCard",
+      title: 'https://via.placeholder.com/240x350?text=ProductCard',
 
-      text: "Sweatshirts",
+      text: 'Sweatshirts',
     },
+
     /* {
       title: "https://via.placeholder.com/240x350",
 
@@ -56,15 +57,17 @@ const Main = () => {
       title: "https://via.placeholder.com/240x350",
 
       text: "Accessories",
-    },*/ 
+    },*/
   ];
+
+  let newProducts = dataBase.slice(-2);
 
   let socialMediaDataBase = [
     {
-      title: "https://via.placeholder.com/240x350",
+      title: 'https://via.placeholder.com/240x350',
     },
     {
-      title: "https://via.placeholder.com/240x350",
+      title: 'https://via.placeholder.com/240x350',
     },
   ];
 
@@ -72,9 +75,9 @@ const Main = () => {
     <div>
       <Hero />
       <div>
-        <ProductMenu dataBase={dataBase} />
-        
-        <SocialMediaMenu />
+        <ProductMenu dataBase={dataBase}  />
+
+        <SocialMediaMenu newProducts={newProducts}/>
       </div>
     </div>
   );

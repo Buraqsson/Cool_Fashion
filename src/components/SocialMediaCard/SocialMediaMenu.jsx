@@ -1,12 +1,20 @@
 import './SocialMedia.css';
 import SocialMediaCard from './SocialMediaCard.jsx';
 
-const SocialMediaMenu = () => {
+const SocialMediaMenu = ({ newProducts }) => {
+
+
   return (
     <div>
       {/* <h3>Social Media menu</h3> */}
       {/* <SocialMediaCard /> */}
+      {newProducts.map(({ title, text }, i) => (
+        <SocialMediaCard title={title} text={text} key={i} />
+      ))}
+
       <div className='socialParent'>
+        {newProducts.title}
+
         <div className='div1'>
           <a href='/'>
             <img
