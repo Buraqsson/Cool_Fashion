@@ -2,7 +2,7 @@ import "./headerStyle.css";
 import { BsFillPersonFill, BsFillCartFill, BsSearch } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
-
+import { Link } from "react-router-dom";
 //npm install react-icons
 
 const Header = () => {
@@ -67,126 +67,210 @@ const Header = () => {
         */}
 
         <nav className="navbar navbar-expand-md">
-        <div className="container-fluid">
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <div className="container-fluid">
+            <div
+              className="collapse navbar-collapse"
+              id="navbarSupportedContent"
+            >
+              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                <li className="nav-item">
+                  <a className="nav-link active" aria-current="page" href="#">
+                    Summer 22
+                  </a>
+                </li>
+                <li className="nav-item dropdown">
+                  <a
+                    className="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Women
+                  </a>
+                  <ul className="dropdown-menu">
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        News
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        Dresses
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        Shirts / Tops
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        Pants / Shorts
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        Sweaters
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        Shoes
+                      </a>
+                    </li>
+                  </ul>
+                </li>
 
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  Summer 22
-                </a>
-              </li>
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Women
-                </a>
-                <ul className="dropdown-menu">
-                 <li><a className="dropdown-item" href="#">News</a></li>
-                 <li><a className="dropdown-item" href="#">Dresses</a></li>
-                 <li><a className="dropdown-item" href="#">Shirts / Tops</a></li>
-                 <li><a className="dropdown-item" href="#">Pants / Shorts</a></li>
-                 <li><a className="dropdown-item" href="#">Sweaters</a></li>
-                 <li><a className="dropdown-item" href="#">Shoes</a></li>
-                </ul>
-              </li>
+                <li className="nav-item dropdown">
+                  <a
+                    className="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Men
+                  </a>
+                  <ul className="dropdown-menu">
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        News
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        Dresses
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        Shirts / Tops
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        Pants / Shorts
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        Sweaters
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        Shoes
+                      </a>
+                    </li>
+                  </ul>
+                </li>
 
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Men
-                </a>
-                <ul className="dropdown-menu">
-                 <li><a className="dropdown-item" href="#">News</a></li>
-                 <li><a className="dropdown-item" href="#">Dresses</a></li>
-                 <li><a className="dropdown-item" href="#">Shirts / Tops</a></li>
-                 <li><a className="dropdown-item" href="#">Pants / Shorts</a></li>
-                 <li><a className="dropdown-item" href="#">Sweaters</a></li>
-                 <li><a className="dropdown-item" href="#">Shoes</a></li>
-                </ul>
-              </li>
+                <li className="nav-item dropdown">
+                  <a
+                    className="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Unisex
+                  </a>
+                  <ul className="dropdown-menu">
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        News
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        Dresses
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        Shirts / Tops
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        Pants / Shorts
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        Sweaters
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        Shoes
+                      </a>
+                    </li>
+                  </ul>
+                </li>
 
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Unisex
-                </a>
-                <ul className="dropdown-menu">
-                 <li><a className="dropdown-item" href="#">News</a></li>
-                 <li><a className="dropdown-item" href="#">Dresses</a></li>
-                 <li><a className="dropdown-item" href="#">Shirts / Tops</a></li>
-                 <li><a className="dropdown-item" href="#">Pants / Shorts</a></li>
-                 <li><a className="dropdown-item" href="#">Sweaters</a></li>
-                 <li><a className="dropdown-item" href="#">Shoes</a></li>
-                </ul>
-              </li>
+                <li className="nav-item dropdown">
+                  <a
+                    className="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Sale
+                  </a>
+                  <ul className="dropdown-menu">
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        Dresses
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        Shirts / Tops
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        Pants / Shorts
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        Sweaters
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        Shoes
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
 
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Sale
-                </a>
-                <ul className="dropdown-menu">
-                 <li><a className="dropdown-item" href="#">Dresses</a></li>
-                 <li><a className="dropdown-item" href="#">Shirts / Tops</a></li>
-                 <li><a className="dropdown-item" href="#">Pants / Shorts</a></li>
-                 <li><a className="dropdown-item" href="#">Sweaters</a></li>
-                 <li><a className="dropdown-item" href="#">Shoes</a></li>
-                </ul>
-              </li>
-            </ul>
-            
+            <div
+              className="collapse navbar-collapse "
+              id="navbarSupportedContent"
+            >
+              <ul className="navbar-nav  mb-2 mb-lg-0">
+                <li className="nav-item">
+                  <a className="nav-link active" aria-current="page" href="#">
+                    Contact
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link active" aria-current="page" href="#">
+                    HBTQ
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-
-          <div className="collapse navbar-collapse " id="navbarSupportedContent">
-            <ul className="navbar-nav  mb-2 mb-lg-0">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  Contact
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  HBTQ
-                </a>
-              </li>
-            </ul>
-          </div>
-
-
-
-
-        </div>
-      </nav>
-
-
-
+        </nav>
       </div>
-
-
-      
-
-
     </div>
   );
 };
