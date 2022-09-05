@@ -8,7 +8,7 @@ const SocialMediaMenu = () => {
       {/* <SocialMediaCard /> */}
       <div className='socialParent'>
         <div className='div1'>
-          <a href='https://www.google.com/'>
+          <a href='/'>
             <img
               className='imgSocialMedia'
               src='https://via.placeholder.com/290x450?text=Social'
@@ -18,7 +18,7 @@ const SocialMediaMenu = () => {
         </div>
 
         <div className='div2'>
-          <a href='https://www.google.com/'>
+          <a href='/'>
             <img
               className='imgSocialMedia'
               src='https://via.placeholder.com/290x450?text=Media'
@@ -28,7 +28,7 @@ const SocialMediaMenu = () => {
         </div>
 
         <div className='div3'>
-          <a href='https://www.google.com/'>
+          <a href='/'>
             <img
               className='imgSocialMedia'
               src='https://via.placeholder.com/290x140?text=Images'
@@ -38,13 +38,13 @@ const SocialMediaMenu = () => {
         </div>
 
         <div className='div4'>
-          <a href='https://www.google.com/'>
+          <a href='/'>
             <p className='socialText'>Make a statement!</p>
           </a>
         </div>
 
         <div className='div5'>
-          <a href='https://www.google.com/'>
+          <a href='/'>
             <p className='socialText'>New Customers Gets 20% Off</p>
           </a>
         </div>
