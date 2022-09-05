@@ -2,6 +2,7 @@ import "./headerStyle.css";
 import { BsFillPersonFill, BsFillCartFill, BsSearch } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 //npm install react-icons
 
@@ -38,34 +39,6 @@ const Header = () => {
             </a>
           </div>
         </div>
-        {/*<div className="menuList">
-          <div className="menuList1">
-            <ul className="categories">
-              <li>
-                <a href="#"> Home </a>
-              </li>
-              <li>
-                <a href="#"> Women </a>
-              </li>
-              <li>
-                <a href="#"> Unisex </a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="menuList2">
-            <ul className="company">
-              <li>
-                <a href="#"> Contact </a>
-              </li>
-              <li>
-                <a href="#"> HBTQ </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        */}
-
         <nav className="navbar navbar-expand-md">
         <div className="container-fluid">
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -161,9 +134,11 @@ const Header = () => {
           <div className="collapse navbar-collapse " id="navbarSupportedContent">
             <ul className="navbar-nav  mb-2 mb-lg-0">
               <li className="nav-item">
+                <Link to="/contact">
                 <a className="nav-link active" aria-current="page" href="#">
                   Contact
                 </a>
+                </Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#">
