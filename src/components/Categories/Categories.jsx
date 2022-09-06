@@ -1,7 +1,6 @@
 import ProductCard from "./ProductCard";
-import "./ProductMenu.css";
 
-const ProductMenu = ({ dataBase }) => {
+const Categories = ({ dataBase }) => {
   return (
     <div className="gridContainer">
       {dataBase.map(({ title, text }, i) => (
@@ -11,4 +10,4 @@ const ProductMenu = ({ dataBase }) => {
   );
 };
 
-export default ProductMenu;
+export default Categories;

@@ -8,6 +8,84 @@ import ProductPage from "./Pages/ProductPage";
 import FrontPage from "./Pages/FrontPage";
 
 function App() {
+  let dataBase = [
+    {
+      title: "https://via.placeholder.com/240x350?text=ProductCard",
+
+      text: "Product",
+    },
+    {
+      title: "https://via.placeholder.com/240x350?text=ProductCard",
+
+      text: "Product",
+    },
+    {
+      title: "https://via.placeholder.com/240x350?text=ProductCard",
+
+      text: "Product",
+    },
+    {
+      title: "https://via.placeholder.com/240x350?text=ProductCard",
+
+      text: "Product",
+    },
+
+    {
+      title: "https://via.placeholder.com/240x350?text=ProductCard",
+
+      text: "Product",
+    },
+    {
+      title: "https://via.placeholder.com/240x350",
+
+      text: "Product",
+    },
+    {
+      title: "https://via.placeholder.com/240x350",
+
+      text: "Product",
+    },
+    {
+      title: "https://via.placeholder.com/240x350",
+
+      text: "Product",
+    },
+    {
+      title: "https://via.placeholder.com/240x350",
+
+      text: "Product",
+    },
+    {
+      title: "https://via.placeholder.com/240x350",
+
+      text: "Product",
+    },
+    {
+      title: "https://via.placeholder.com/240x350?text=ProductCard",
+
+      text: "Product",
+    },
+    {
+      title: "https://via.placeholder.com/240x350?text=ProductCard",
+
+      text: "Product",
+    },
+    {
+      title: "https://via.placeholder.com/240x350?text=ProductCard",
+
+      text: "Product",
+    },
+    {
+      title: "https://via.placeholder.com/240x350?text=ProductCard",
+
+      text: "Product",
+    },
+    {
+      title: "https://via.placeholder.com/240x350?text=ProductCard",
+
+      text: "Product",
+    },
+  ];
   return (
     <div className="App">
       <Header />
@@ -15,9 +93,12 @@ function App() {
         <Route exact path="/" render={() => <FrontPage />} />
         <Route path="/admin" render={() => <AdminPage />} />
         <Route path="/contact" render={() => <ContactPage />} />
-        <Route path="/productPage" render={() => <ProductPage />} />
+        <Route
+          path="/productPage"
+          render={(props) => <ProductPage dataBase={dataBase} {...props} />}
+        />
       </Switch>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
