@@ -5,7 +5,7 @@ import './Main.css';
 import SocialMediaMenu from '../SocialMediaCard/SocialMediaMenu';
 import NewProductMenu from '../NewProducts/NewProductMenu';
 
-const Main = () => {
+const Main = ({ newProducts }) => {
   let dataBase = [
     {
       title: 'https://via.placeholder.com/240x350?text=ProductCard',
@@ -33,45 +33,7 @@ const Main = () => {
 
       text: 'Sweatshirts',
     },
-
-    /* {
-      title: "https://via.placeholder.com/240x350",
-
-      text: "Skirts",
-    },
-    {
-      title: "https://via.placeholder.com/240x350",
-
-      text: "Jeans & Trousers",
-    },
-    {
-      title: "https://via.placeholder.com/240x350",
-
-      text: "Coats & Jackets",
-    },
-    {
-      title: "https://via.placeholder.com/240x350",
-
-      text: "Shoes",
-    },
-    {
-      title: "https://via.placeholder.com/240x350",
-
-      text: "Accessories",
-    },*/
   ];
-
-  let newProducts = dataBase.slice(-2).map((obj) => {
-    if (obj.title) {
-      return {
-        // ...obj,
-        title: 'https://via.placeholder.com/240x350?text=NewProduct',
-        text: obj.text,
-      };
-    }
-
-    return obj;
-  });
 
   let socialMediaDataBase = [
     {

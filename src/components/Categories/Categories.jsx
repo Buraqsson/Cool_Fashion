@@ -1,10 +1,10 @@
-import ProductCard from "./ProductCard";
+import ProductCard from './ProductCard';
 
 const Categories = ({ dataBase }) => {
   return (
-    <div className="gridContainer">
+    <div className='gridContainer'>
       {dataBase.map(({ title, text }, i) => (
-        <ProductCard title={title} text={text} key={i} />
+        <ProductCard title={title} text={text + i} key={i} />
       ))}
     </div>
   );

@@ -19,10 +19,10 @@ import '../ProduktSida/ProductMenu.css';
 const NewProductMenu = ({ newProducts }) => {
   return (
     <div>
-      <h2>New Products</h2>
+      <h2>New Arrivals</h2>
       <div className='gridContainer'>
         {newProducts.map(({ title, text }, i) => (
-          <ProductCard title={title} text={text} key={i} />
+          <ProductCard title={title} text={'New ' + text + ++i} key={i} />
         ))}
       </div>
     </div>
