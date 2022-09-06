@@ -4,36 +4,41 @@ import "./Contact.css";
 const Contact = () => {
   return (
     <div>
-      <h2 className="m-4">This is Cool Fashion!</h2>
-
-      <div className="contactParent ">
-        <div className="companyInfo">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident
-            placeat nemo fuga dolorum magnam quasi temporibus tempora sequi! Eos
-            aperiam accusantium alias amet. Voluptatem, commodi necessitatibus.
-            Dolorem iste nobis vel.
-          </p>
-          <p>
-            <strong>Phone:</strong> 0012 123 123 23
-          </p>
-          <p>
-            <strong>Email:</strong> contact@coolfashion.com
-          </p>
-        </div>
-        <div className="companyImage">
-          <img
-            src="https://via.placeholder.com/450x290?text=CompanyImg"
-            alt=""
-          />
+      <div className="row contactParent ">
+        <div className="col companyAll">
+          <div className="row infoPlusImg">
+            <div className="col companyInfo">
+              <h2 className="contactHeader my-4">This is Cool Fashion!</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque
+                esse voluptatum est tempore saepe necessitatibus nemo
+                laboriosam, animi iste commodi qui atque nesciunt exercitationem
+                magnam temporibus tempora omnis, explicabo repellendus sapiente
+                sunt. A assumenda sequi sed eaque voluptate veniam optio,
+                exercitationem ipsum. <br />
+                <br />
+                Aliquid, quibusdam porro? Molestias incidunt fugiat sint quos
+                porro, voluptatum voluptatem ipsum possimus laudantium
+                necessitatibus!
+              </p>
+              <p>
+                <strong>Phone:</strong> 0012 123 123 23
+              </p>
+              <p>
+                <strong>Email:</strong> contact@coolfashion.com
+              </p>
+            </div>
+            <div className="col companyImage">
+              <img src="https://picsum.photos/id/378/480/270" alt="" />
+            </div>
+          </div>
         </div>
 
         <div className="contactForm">
-          <h3>Contact us on Cool Fashion!</h3>
+          <h3 className="contactSmallHeader">Contact us!</h3>
           <form className="needs-validation">
             <div className="row mb-3">
               <div className="col">
-                {/* <label for="first-name">*First Name</label> */}
                 <input
                   type="text"
                   className="form-control"
@@ -45,7 +50,6 @@ const Contact = () => {
               </div>
 
               <div className="col">
-                {/* <label for="last-name">Last Name</label> */}
                 <input
                   type="text"
                   className="form-control"
@@ -70,7 +74,6 @@ const Contact = () => {
 
             <div className="row mb-3">
               <div className="col">
-                {/* <label for="message">Message</label> */}
                 <textarea
                   className="form-control"
                   id="message"
@@ -98,7 +101,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <button type="submit" className="btn btn-primary">
+            <button type="submit" className="btn">
               Send
             </button>
           </form>
