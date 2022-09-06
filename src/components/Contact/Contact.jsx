@@ -36,7 +36,7 @@ const Contact = () => {
 
         <div className="contactForm">
           <h3 className="contactSmallHeader">Contact us!</h3>
-          <form className="needs-validation">
+          <form className="needs-validation mt-4">
             <div className="row mb-3">
               <div className="col">
                 <input
@@ -48,7 +48,6 @@ const Contact = () => {
                   required
                 />
               </div>
-
               <div className="col">
                 <input
                   type="text"
@@ -61,7 +60,7 @@ const Contact = () => {
             </div>
 
             <div className="row mb-3">
-              <div className="col">
+              <div className="col-6">
                 <input
                   type="email"
                   className="form-control"
@@ -70,21 +69,38 @@ const Contact = () => {
                   required
                 />
               </div>
+              <div className="col input-group ">
+                <select
+                  className="form-select"
+                  id="inputGroupSelect01"
+                  required
+                >
+                  <option selected disabled>
+                    Choose your subject:
+                  </option>
+                  <option value="1">Support</option>
+                  <option value="2">Business</option>
+                  <option value="3">Service</option>
+                </select>
+                <div className="invalid-feedback">
+                  Please select a valid state.
+                </div>
+              </div>
             </div>
 
             <div className="row mb-3">
-              <div className="col">
+              <div className="col-12">
                 <textarea
                   className="form-control"
                   id="message"
-                  placeholder="Message (Required)"
+                  placeholder="Message (Required) - Maxlength 400 characters!"
                   aria-label="Message"
                   rows="3"
+                  maxlength="400"
                   required
                 />
               </div>
             </div>
-
             <div className="mb-3 form-check">
               <input
                 type="checkbox"

@@ -72,3 +72,39 @@
     background-color: #edcb94;
     border: solid 1px #bb9e70;
 }
+
+.form-select {
+    color: #495057;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    -moz-appearance: none;   
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+} 
+
+.form-control {
+    color: #495057;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+/* select option:target {
+    background-color: #c49b58;
+} */
+
+/* .form-select option {
+    background-color: aqua;
+} */
+
+/* .form-select > option:hover, .form-select > option:focus{
+    text-decoration: none;
+    background-color: #c49b58;
+    
+} */
+
+/* .form-select-disabled-color {
+    background-color: brown;
+} */
+/* .input-group {
+    width: 100%;
+} */
