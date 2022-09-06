@@ -61,6 +61,31 @@ function App() {
 
       text: "Product",
     },
+    {
+      title: "https://via.placeholder.com/240x350?text=ProductCard",
+
+      text: "Product",
+    },
+    {
+      title: "https://via.placeholder.com/240x350?text=ProductCard",
+
+      text: "Product",
+    },
+    {
+      title: "https://via.placeholder.com/240x350?text=ProductCard",
+
+      text: "Product",
+    },
+    {
+      title: "https://via.placeholder.com/240x350?text=ProductCard",
+
+      text: "Product",
+    },
+    {
+      title: "https://via.placeholder.com/240x350?text=ProductCard",
+
+      text: "Product",
+    },
   ];
   return (
     <div className="App">
