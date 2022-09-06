@@ -1,11 +1,12 @@
 import React from 'react'
 import "./AdminLog.css"
-import { useState,renderForm} from 'react';
+import { useState,renderForm,useEffect} from 'react';
 import Admin from "./Admin"
 const AdminLog = () => {
 const [compIsShown, setCompIsShown] = useState(false);
 const [errorMessages, setErrorMessages] = useState({});
 const [isSubmitted, setIsSubmitted] = useState(false)
+const [passwordShown, setPasswordShown] = useState(false);
 
 const renderErrorMessage = (name) =>
   name === errorMessages.name && (
@@ -44,33 +45,41 @@ const database = [
     }
   };
   
-const none = {
-    display: "none"
-}
+  const togglePassword = () => {
+    setPasswordShown(!passwordShown);
+  };
   
   return (
-    <div className="form d-flex justify-content-center">
-     <form onSubmit={handleSubmit}>
+    <div className=" admin_log d-flex justify-content-center">
+     <form onSubmit={handleSubmit} >
+        <legend>Sign in</legend>
+        <hr></hr>
        <div className="input-container">
-         <label>Username </label>
+         <label>Username: </label>
          <input type="text" name="uname" required />
          {renderErrorMessage("uname")}
        </div>
        <div className="input-container">
-         <label>Password </label>
-         <input type="password" name="pass" required />
+         <label>Password:</label>
+         <input type={passwordShown ? "text" : "password"}  name="pass" required />
+         {/* <button onClick={togglePassword}>Show Password</button> */}
+         <button className="btn btn-outline-primary" onClick={togglePassword}>
+                    
+                      Show Password</button>
          {renderErrorMessage("pass")}
+       
        </div>
 
 
        <div className='m-4'>
-         <button className="btn btn-primary" onClick={() => setCompIsShown(true)}  type="submit">Submit</button>
+         <button className="btn btn-primary" onClick={() => setCompIsShown(true)}  type="submit">Sign in</button>
        </div>
+       <hr></hr>
 
+       {isSubmitted ? <div>User is successfully logged in {compIsShown && <Admin />} </div>  : renderForm}
 
-  {isSubmitted ? <div>User is successfully logged in {compIsShown && <Admin />} </div>  : renderForm}
- 
      </form>
+
    </div>
    
   )

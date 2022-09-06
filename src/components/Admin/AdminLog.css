@@ -1,5 +1,10 @@
+.admin_log{
+  padding: 120px 0px 220px 0px;
+  background-color: #84A59D;
+}
 
-  /* input[type="text"],
+
+   input[type="text"],
   input[type="password"] {
     height: 25px;
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -17,16 +22,9 @@
   
   input[type="submit"]:hover {
     background: #6cf0c2;
-  } */
+  } 
   
 
-  
-  .login-form {
-    background-color: white;
-    padding: 2rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-  
   .list-container {
     display: flex;
   }
@@ -48,6 +46,4 @@
     margin: 10px;
   }
 
-  .renderForm
-  {
-    display: none;}
+ 
