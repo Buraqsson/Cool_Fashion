@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import Categories from "../components/Categories/Categories";
 
-const ProductPage = () => {
+const ProductPage = ({ dataBase }) => {
   return (
-    <div>ProductPage</div>
-  )
-}
+    <div>
+      <h1>Products</h1>
+      <Categories dataBase={dataBase} />
+    </div>
+  );
+};
 
-export default ProductPage
+export default ProductPage;
