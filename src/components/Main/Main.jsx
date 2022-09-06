@@ -61,7 +61,17 @@ const Main = () => {
     },*/
   ];
 
-  let newProducts = dataBase.slice(-2);
+  let newProducts = dataBase.slice(-2).map((obj) => {
+    if (obj.title) {
+      return {
+        // ...obj,
+        title: 'https://via.placeholder.com/240x350?text=NewProduct',
+        text: obj.text,
+      };
+    }
+
+    return obj;
+  });
 
   let socialMediaDataBase = [
     {
@@ -72,6 +82,7 @@ const Main = () => {
     },
   ];
 
+  console.log(newProducts);
   return (
     <div>
       <Hero />
