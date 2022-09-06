@@ -34,7 +34,7 @@ function App() {
     {
       title: "https://via.placeholder.com/240x350?text=ProductCard",
 
-      text: "Sweatshirts",
+      text: "Product",
     },
     {
       title: "https://via.placeholder.com/240x350",

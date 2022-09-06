@@ -2,8 +2,7 @@ import "./headerStyle.css";
 import { BsFillPersonFill, BsFillCartFill, BsSearch } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
-import { Link } from "react-router-dom";
-//npm install react-icons
+//import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -73,8 +72,9 @@ const Header = () => {
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                {" "}
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">
+                  <a className="nav-link active" aria-current="page">
                     Summer 22
                   </a>
                 </li>
@@ -121,7 +121,6 @@ const Header = () => {
                     </li>
                   </ul>
                 </li>
-
                 <li className="nav-item dropdown">
                   <a
                     className="nav-link dropdown-toggle"
@@ -165,7 +164,6 @@ const Header = () => {
                     </li>
                   </ul>
                 </li>
-
                 <li className="nav-item dropdown">
                   <a
                     className="nav-link dropdown-toggle"
@@ -209,7 +207,6 @@ const Header = () => {
                     </li>
                   </ul>
                 </li>
-
                 <li className="nav-item dropdown">
                   <a
                     className="nav-link dropdown-toggle"
