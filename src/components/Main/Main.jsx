@@ -2,40 +2,37 @@ import React from "react";
 import Hero from "../Hero/Hero";
 import ProductMenu from "../ProduktSida/ProductMenu";
 import "./Main.css";
-<<<<<<< HEAD
-=======
 import SocialMediaMenu from "../SocialMediaCard/SocialMediaMenu";
 
->>>>>>> efea3ea72fa41a6a698f63d04e940a9181d537cd
 const Main = () => {
   let dataBase = [
     {
-      title: "https://via.placeholder.com/240x350",
+      title: "https://via.placeholder.com/240x350?text=ProductCard",
 
       text: "New in",
     },
     {
-      title: "https://via.placeholder.com/240x350",
+      title: "https://via.placeholder.com/240x350?text=ProductCard",
 
       text: "Best Sellers",
     },
     {
-      title: "https://via.placeholder.com/240x350",
+      title: "https://via.placeholder.com/240x350?text=ProductCard",
 
       text: "Tops",
     },
     {
-      title: "https://via.placeholder.com/240x350",
+      title: "https://via.placeholder.com/240x350?text=ProductCard",
 
       text: "T-shirts",
     },
 
     {
-      title: "https://via.placeholder.com/240x350",
+      title: "https://via.placeholder.com/240x350?text=ProductCard",
 
       text: "Sweatshirts",
     },
-    {
+    /* {
       title: "https://via.placeholder.com/240x350",
 
       text: "Skirts",
@@ -59,7 +56,7 @@ const Main = () => {
       title: "https://via.placeholder.com/240x350",
 
       text: "Accessories",
-    },
+    },*/
   ];
 
   let socialMediaDataBase = [
@@ -76,10 +73,8 @@ const Main = () => {
       <Hero />
       <div>
         <ProductMenu dataBase={dataBase} />
-<<<<<<< HEAD
-=======
         <SocialMediaMenu />
->>>>>>> efea3ea72fa41a6a698f63d04e940a9181d537cd
+        >>>>>>> efea3ea72fa41a6a698f63d04e940a9181d537cd
       </div>
     </div>
   );

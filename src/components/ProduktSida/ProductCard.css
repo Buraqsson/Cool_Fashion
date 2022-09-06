@@ -1,7 +1,8 @@
 .div_image {
   display: grid;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
   transition: 0.3s;
+  justify-content: center;
 }
 
 img {
@@ -9,5 +10,12 @@ img {
 }
 
 .div_image:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  color: #f28482;
+  /* border-bottom: solid 3px #f28482; */
+  /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); */
+  /* text-decoration: underline; */
+}
+
+.div_image p {
+  margin-bottom: 5px;
 }
