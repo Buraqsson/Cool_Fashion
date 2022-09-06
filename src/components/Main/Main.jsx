@@ -3,6 +3,7 @@ import Hero from '../Hero/Hero';
 import ProductMenu from '../ProduktSida/ProductMenu';
 import './Main.css';
 import SocialMediaMenu from '../SocialMediaCard/SocialMediaMenu';
+import NewProductMenu from '../NewProducts/NewProductMenu';
 
 const Main = () => {
   let dataBase = [
@@ -75,9 +76,9 @@ const Main = () => {
     <div>
       <Hero />
       <div>
-        <ProductMenu dataBase={dataBase}  />
-
-        <SocialMediaMenu newProducts={newProducts}/>
+        <ProductMenu dataBase={dataBase} />
+        <NewProductMenu newProducts={newProducts} />
+        <SocialMediaMenu />
       </div>
     </div>
   );
