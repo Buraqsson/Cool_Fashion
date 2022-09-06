@@ -1,4 +1,4 @@
-const ProductCard = ({ text, title }) => {
+const ProductCard = ({ title, text }) => {
   return (
     <div className="div_image">
       <img src={title} />

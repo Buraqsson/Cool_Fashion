@@ -34,7 +34,7 @@ a:hover {
     /* color: aquamarine; */
     /* color: #f7ede2; */
     color: #F6BD60;
-
+    text-decoration: none;
 }
 
 .dropdown:hover .dropdown-menu {

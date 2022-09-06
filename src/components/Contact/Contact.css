@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+
+.contactParent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 1rem 10rem;
+    }
+
+.companyAll {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.infoPlusImg {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 5px;
+    margin: 2rem 3rem;
+}
+
+.contactHeader {
+    /* font-family: 'Ranchers', cursive;
+    font-size: xx-large;   */
+    font-family: 'Staatliches', cursive;
+}
+
+.contactSmallHeader{
+    /* font-family: 'Ranchers', cursive;
+    font-size: xx-large;   */
+    font-family: 'Staatliches', cursive;
+}
+
+.companyInfo { 
+    grid-area: 1 / 1 / 2 / 2; 
+    text-align: left;
+    padding-right: 0.6rem;
+    margin-bottom: 0;
+    /* margin: 0 3rem; */
+}
+
+.companyImage { 
+    grid-area: 1 / 2 / 2 / 3; 
+    margin-bottom: 0;
+    /* margin: 0 3rem; */
+}
+
+.companyImage img {
+    object-fit: cover;
+    width: 100%; 
+}
+
+.contactForm { 
+    grid-area: 2 / 1 / 3 / 3; 
+    margin: 1rem 10rem 0 10rem;
+    /* width: 50%;
+    align-items: center; */
+}
+
+.btn {
+    /* background-color: #84A59D;
+    border: solid 1px #69837d; */
+    background-color: #F6BD60;
+    border: solid 1px #c49b58;
+}
+
+.btn:hover {
+    /* background-color: #f7ede2;
+    border: solid 1px #c5b7a9; */
+    background-color: #edcb94;
+    border: solid 1px #bb9e70;
+}

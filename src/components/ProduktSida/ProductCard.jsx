@@ -1,12 +1,16 @@
 import './ProductCard.css';
+import { Link } from 'react-router-dom';
+
 const ProductCard = ({ title, text }) => {
   return (
-    <div className='div_image'>
-      <a href='/'>
+    <Link to={{ pathname: `/productPage/${text}` }} target='_parent'>
+      <div className='div_image'>
+        {/* <div className=""> */}
         <img src={title} />
         <p>{text}</p>
-      </a>
-    </div>
+        {/* </div> */}
+      </div>
+    </Link>
   );
 };
 
