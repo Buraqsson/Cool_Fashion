@@ -37,7 +37,7 @@ const Footer = () => {
           <Column>
             <Heading>Contact</Heading>
             <FooterLink href="#">Contact us</FooterLink>
-            <FooterLink href="#">press</FooterLink>
+            <FooterLink href="#">Press</FooterLink>
             <FooterLink href="#">Coding</FooterLink>
             <FooterLink href="#">Working at Cool Fashion</FooterLink>
           </Column>
@@ -48,7 +48,7 @@ const Footer = () => {
            
             <FooterLink href="#">Transparency</FooterLink>
             <Link to="/admin" target="_parent">
-            <FooterLink>Admin</FooterLink>
+            <FooterLink style={{color:"white"}}>Admin</FooterLink>
             </Link>
           </Column>
         </Row>

@@ -26,7 +26,7 @@ const Header = () => {
 
           <div className="headerLogo">
             <Link to="/" target="_parent">
-              <h1>Cool Fashion</h1>
+              <h1>COOL FASHION</h1>
             </Link>
           </div>
 
@@ -45,15 +45,18 @@ const Header = () => {
               className="collapse navbar-collapse"
               id="navbarSupportedContent"
             >
-              <Link to="/productPage" target="_parent">
+              {/* <Link to="/productPage" target="_parent"> */}
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                   {" "}
                   <li className="nav-item">
+                  <Link to="/productPage" target="_parent">
                     <a className="nav-link active" aria-current="page">
                       Summer 22
                     </a>
+                    </Link>
                   </li>
                   <li className="nav-item dropdown">
+                  <Link to="/productPage" target="_parent">
                     <a
                       className="nav-link dropdown-toggle"
                       role="button"
@@ -62,28 +65,30 @@ const Header = () => {
                     >
                       Women
                     </a>
+                    </Link>
                     <ul className="dropdown-menu">
                       <li>
-                        <a className="dropdown-item">News</a>
+                      <Link to="/productPage" target="_parent"><a className="dropdown-item">News</a></Link>
                       </li>
                       <li>
-                        <a className="dropdown-item">Dresses</a>
+                      <Link to="/productPage" target="_parent"><a className="dropdown-item">Dresses</a></Link>
                       </li>
                       <li>
-                        <a className="dropdown-item">Shirts / Tops</a>
+                      <Link to="/productPage" target="_parent"><a className="dropdown-item">Shirts / Tops</a></Link>
                       </li>
                       <li>
-                        <a className="dropdown-item">Pants / Shorts</a>
+                      <Link to="/productPage" target="_parent"><a className="dropdown-item">Pants / Shorts</a></Link>
                       </li>
                       <li>
-                        <a className="dropdown-item">Sweaters</a>
+                      <Link to="/productPage" target="_parent"><a className="dropdown-item">Sweaters</a></Link>
                       </li>
                       <li>
-                        <a className="dropdown-item">Shoes</a>
+                      <Link to="/productPage" target="_parent"><a className="dropdown-item">Shoes</a></Link>
                       </li>
                     </ul>
                   </li>
                   <li className="nav-item dropdown">
+                  <Link to="/productPage" target="_parent">
                     <a
                       className="nav-link dropdown-toggle"
                       role="button"
@@ -92,28 +97,30 @@ const Header = () => {
                     >
                       Men
                     </a>
+                    </Link>
                     <ul className="dropdown-menu">
-                      <li>
-                        <a className="dropdown-item">News</a>
+                    <li>
+                      <Link to="/productPage" target="_parent"><a className="dropdown-item">News</a></Link>
                       </li>
                       <li>
-                        <a className="dropdown-item">Dresses</a>
+                      <Link to="/productPage" target="_parent"><a className="dropdown-item">Dresses</a></Link>
                       </li>
                       <li>
-                        <a className="dropdown-item">Shirts / Tops</a>
+                      <Link to="/productPage" target="_parent"><a className="dropdown-item">Shirts / Tops</a></Link>
                       </li>
                       <li>
-                        <a className="dropdown-item">Pants / Shorts</a>
+                      <Link to="/productPage" target="_parent"><a className="dropdown-item">Pants / Shorts</a></Link>
                       </li>
                       <li>
-                        <a className="dropdown-item">Sweaters</a>
+                      <Link to="/productPage" target="_parent"><a className="dropdown-item">Sweaters</a></Link>
                       </li>
                       <li>
-                        <a className="dropdown-item">Shoes</a>
+                      <Link to="/productPage" target="_parent"><a className="dropdown-item">Shoes</a></Link>
                       </li>
                     </ul>
                   </li>
                   <li className="nav-item dropdown">
+                  <Link to="/productPage" target="_parent">
                     <a
                       className="nav-link dropdown-toggle"
                       role="button"
@@ -122,29 +129,31 @@ const Header = () => {
                     >
                       Unisex
                     </a>
+                    </Link> 
                     <ul className="dropdown-menu">
-                      <li>
-                        <a className="dropdown-item">News</a>
+                    <li>
+                      <Link to="/productPage" target="_parent"><a className="dropdown-item">News</a></Link>
                       </li>
                       <li>
-                        <a className="dropdown-item">Dresses</a>
+                      <Link to="/productPage" target="_parent"><a className="dropdown-item">Dresses</a></Link>
                       </li>
                       <li>
-                        <a className="dropdown-item">Shirts / Tops</a>
+                      <Link to="/productPage" target="_parent"><a className="dropdown-item">Shirts / Tops</a></Link>
                       </li>
                       <li>
-                        <a className="dropdown-item">Pants / Shorts</a>
+                      <Link to="/productPage" target="_parent"><a className="dropdown-item">Pants / Shorts</a></Link>
                       </li>
                       <li>
-                        <a className="dropdown-item">Sweaters</a>
+                      <Link to="/productPage" target="_parent"><a className="dropdown-item">Sweaters</a></Link>
                       </li>
                       <li>
-                        <a className="dropdown-item">Shoes</a>
+                      <Link to="/productPage" target="_parent"><a className="dropdown-item">Shoes</a></Link>
                       </li>
                     </ul>
                   </li>
                   <li className="nav-item dropdown">
-                    <a
+                  <Link to="/productPage" target="_parent">
+                     <a
                       className="nav-link dropdown-toggle"
                       role="button"
                       data-bs-toggle="dropdown"
@@ -152,26 +161,30 @@ const Header = () => {
                     >
                       Sale
                     </a>
+                    </Link>
                     <ul className="dropdown-menu">
-                      <li>
-                        <a className="dropdown-item">Dresses</a>
+                    <li>
+                      <Link to="/productPage" target="_parent"><a className="dropdown-item">News</a></Link>
                       </li>
                       <li>
-                        <a className="dropdown-item">Shirts / Tops</a>
+                      <Link to="/productPage" target="_parent"><a className="dropdown-item">Dresses</a></Link>
                       </li>
                       <li>
-                        <a className="dropdown-item">Pants / Shorts</a>
+                      <Link to="/productPage" target="_parent"><a className="dropdown-item">Shirts / Tops</a></Link>
                       </li>
                       <li>
-                        <a className="dropdown-item">Sweaters</a>
+                      <Link to="/productPage" target="_parent"><a className="dropdown-item">Pants / Shorts</a></Link>
                       </li>
                       <li>
-                        <a className="dropdown-item">Shoes</a>
+                      <Link to="/productPage" target="_parent"><a className="dropdown-item">Sweaters</a></Link>
+                      </li>
+                      <li>
+                      <Link to="/productPage" target="_parent"><a className="dropdown-item">Shoes</a></Link>
                       </li>
                     </ul>
                   </li>
                 </ul>
-              </Link>
+              {/* </Link> */}
             </div>
 
             <div

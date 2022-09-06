@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom';
 const Admin = () => {
     
     const options = [
-        { label: '1' },
-        { label: '2' },
-        { label: '3' },
+        { label: 'Women' },
+        { label: 'Men' },
+        { label: 'Unisex' },
+        { label: 'Sale' },
+        { label: 'Summer 22' },
       ];
       const [value, setValue] = React.useState('fruit');
       const handleChange = (event) => {

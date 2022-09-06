@@ -56,12 +56,12 @@ const database = [
         <hr></hr>
        <div className="input-container">
          <label>Username: </label>
-         <input type="text" name="uname" required />
+         <input className="usernameInput" type="text" name="uname" required />
          {renderErrorMessage("uname")}
        </div>
        <div className="input-container">
          <label>Password:</label>
-         <input type={passwordShown ? "text" : "password"}  name="pass" required />
+         <input className="passwordInput" type={passwordShown ? "text" : "password"}  name="pass" required />
          {/* <button onClick={togglePassword}>Show Password</button> */}
          <button className="btn btn-outline-primary" onClick={togglePassword}>
                     

@@ -4,7 +4,7 @@ import Categories from "../components/Categories/Categories";
 const ProductPage = ({ dataBase }) => {
   return (
     <div>
-      <h1>Products</h1>
+      <h2>Products</h2>
       <Categories dataBase={dataBase} />
     </div>
   );
