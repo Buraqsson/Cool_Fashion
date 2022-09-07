@@ -88,23 +88,8 @@
     border-radius: 0.25rem;
 }
 
-/* select option:target {
-    background-color: #c49b58;
-} */
-
-/* .form-select option {
-    background-color: aqua;
-} */
-
-/* .form-select > option:hover, .form-select > option:focus{
-    text-decoration: none;
-    background-color: #c49b58;
-    
-} */
-
-/* .form-select-disabled-color {
-    background-color: brown;
-} */
-/* .input-group {
-    width: 100%;
-} */
+.count {
+    color: #676e75;
+    text-align: right;
+    margin: 0;
+}

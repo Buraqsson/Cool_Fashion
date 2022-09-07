@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { useState } from "react";
+
 const Admin = () => {
     
     const options = [
@@ -10,6 +12,7 @@ const Admin = () => {
         { label: 'Summer 22' },
       ];
       const [value, setValue] = React.useState('fruit');
+      const [count, setCount] = useState(0);
       const handleChange = (event) => {
         setValue(event.target.value);
       };
@@ -48,8 +51,11 @@ const Admin = () => {
         <textarea class="form-control mt-3 "
          name="description" 
          id="exampleFormControlTextarea1"
-          rows="3">
+          rows="3"
+          onChange={e => setCount(e.target.value.length)}
+          >
         </textarea>
+        <p className="adminCount">{count}</p>
     </div>
 
     <div  class="form-group mt-12 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">

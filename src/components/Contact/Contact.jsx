@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.css";
 
 const Contact = () => {
+  const [count, setCount] = useState(0);
   return (
     <div>
       <div className="row contactParent ">
@@ -90,15 +91,17 @@ const Contact = () => {
 
             <div className="row mb-3">
               <div className="col-12">
-                <textarea
+              <p className="count">{count}/400</p>
+              <textarea
                   className="form-control"
                   id="message"
-                  placeholder="Message (Required) - Maxlength 400 characters!"
+                  placeholder="Message (Required)"
                   aria-label="Message"
                   rows="3"
                   maxlength="400"
+                  onChange={e => setCount(e.target.value.length)}
                   required
-                />
+                />                
               </div>
             </div>
             <div className="mb-3 form-check">
