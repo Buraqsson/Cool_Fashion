@@ -1,6 +1,9 @@
 .admin_log{
   padding: 120px 0px 220px 0px;
-  background-color: #84A59D;
+  /* background-color: #84A59D; */
+  background-image: url(../Admin/Admin-img/bild3.png);
+  background-size: cover;
+ background-repeat: no-repeat;
 }
 
 
@@ -47,8 +50,19 @@
   }
 
   .adminCount {
-    color: #3f4448;
+    color:  #F6BD60;
     text-align: right;
     margin: 0;
   }
  
+  .succes_message{
+    color: #F6BD60;
+  }
+
+  .hr1{
+    background-color:  #F6BD60;
+  }
+  .admin_label{
+font-size: 20px;
+  }
+

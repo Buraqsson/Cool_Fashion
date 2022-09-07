@@ -1,24 +1,22 @@
-import React from 'react'
-import {NavLink} from "react-router-dom"
+import React from "react";
+import { NavLink } from "react-router-dom";
 import {
-    Box,
-    Container,
-    Row,
-    Column,
-    FooterLink,
-    Heading,
-  } from "./FooterStyles";
-  import "./Footer.css"
-  import gmail from "./social/gmail.svg"
-  import facebook from "./social/facebook.svg"
-  import instagram from "./social/instagram.svg"
-  import linkedin from "./social/linkedin.svg"
-import { Link } from 'react-router-dom';
+  Box,
+  Container,
+  Row,
+  Column,
+  FooterLink,
+  Heading,
+} from "./FooterStyles";
+import "./Footer.css";
+import gmail from "./social/gmail.svg";
+import facebook from "./social/facebook.svg";
+import instagram from "./social/instagram.svg";
+import linkedin from "./social/linkedin.svg";
+import { Link } from "react-router-dom";
 const Footer = () => {
-
-
-
   return (
+    
     <Box>
       <h1
         className="footerHeader"
@@ -26,8 +24,7 @@ const Footer = () => {
       >
         Make a statement for yourself!
       </h1>
-      <Container>
-        <Row>
+        <Row className="d-flex justify-content-center">
           <Column>
             <Heading>Help</Heading>
             <FooterLink href="#">FAQ</FooterLink>
@@ -36,30 +33,26 @@ const Footer = () => {
           </Column>
           <Column>
             <Heading>Contact</Heading>
-            <FooterLink href="#">Contact us</FooterLink>
             <FooterLink href="#">Press</FooterLink>
-            <FooterLink href="#">Coding</FooterLink>
-            <FooterLink href="#">Working at Cool Fashion</FooterLink>
+            <FooterLink href="#">Working with us</FooterLink>
+            <Link to="/contact" target="_parent">
+              <FooterLink style={{ color: "white" }}>Contact us</FooterLink>
+            </Link>
           </Column>
           <Column>
-            <Heading>We are Cool Fashion</Heading>
-            
-            <FooterLink href='#'>About us</FooterLink>
-           
+          <Link to="/" target="_parent">
+            <Heading> Cool Fashion</Heading>
+            </Link>
+            <FooterLink href="#">About us</FooterLink>
             <FooterLink href="#">Transparency</FooterLink>
             <Link to="/admin" target="_parent">
-            <FooterLink style={{color:"white"}}>Admin</FooterLink>
+              <FooterLink style={{ color: "white" }}>Admin</FooterLink>
             </Link>
           </Column>
         </Row>
-      </Container>
 
-
-      
-
-
-    <div className='footer'> 
-        <div className='social-media'>
+      <div className="footer">
+        <div className="social-media">
           <a
             classsName="socia-icon"
             target="_blank"
