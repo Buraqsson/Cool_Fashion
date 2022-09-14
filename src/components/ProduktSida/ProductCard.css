@@ -11,9 +11,11 @@ img {
 
 .div_image:hover {
   color: #f28482;
+
   /* border-bottom: solid 3px #f28482; */
   /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); */
   /* text-decoration: underline; */
+  cursor: pointer;
 }
 
 .div_image p {

@@ -1,0 +1,68 @@
+.admin_log{
+  padding: 120px 0px 220px 0px;
+  /* background-color: #84A59D; */
+  background-image: url(../Admin/Admin-img/bild3.png);
+  background-size: cover;
+ background-repeat: no-repeat;
+}
+
+
+  .usernameInput input[type="text"],
+  .passwordInput input[type="password"] {
+    height: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  
+  input[type="submit"] {
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    background: #01d28e;
+    border: 1px solid #01d28e;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  input[type="submit"]:hover {
+    background: #6cf0c2;
+  } 
+  
+
+  .list-container {
+    display: flex;
+  }
+  
+  .error {
+    color: red;
+    font-size: 12px;
+  }
+  
+  .title {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 10px;
+  }
+
+  .adminCount {
+    color:  #F6BD60;
+    text-align: right;
+    margin: 0;
+  }
+ 
+  .succes_message{
+    color: #F6BD60;
+  }
+
+  .hr1{
+    background-color:  #F6BD60;
+  }
+  .admin_label{
+font-size: 20px;
+  }
+

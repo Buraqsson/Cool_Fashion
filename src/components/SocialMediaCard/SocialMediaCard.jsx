@@ -1,7 +1,10 @@
-const SocialMediaCard = () => {
+const SocialMediaCard = ({ title, text }) => {
   return (
     <div>
-      <h3>Social media</h3>
+      <a href='/'>
+        <img src={title} />
+        <p>{text}</p>
+      </a>
     </div>
   );
 };
